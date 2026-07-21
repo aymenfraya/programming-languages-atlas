@@ -1,5 +1,5 @@
 
-# Programming Languages Atlas
+# Programming Languages Atlas 
 
 After recently completing the **Cisco Networking Academy – Data Science Essentials Using Python** course, I wanted to apply the data analysis skills I had learned together with the front-end web development skills I had recently acquired. This project is the result of combining both fields into a single application.
 
