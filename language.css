@@ -7,7 +7,6 @@ body {
     background: url('background.avif') repeat;
 }
 
-/* 1️⃣ تنسيق الـ Navbar كشريط يطفو في الأعلى مع تأثير زجاجي */
 .navbar {
     position: sticky;
     top: 15px;
@@ -30,7 +29,6 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* 2️⃣ تنسيق الأزرار داخل الـ Navbar */
 .nav-btn {
     text-decoration: none;
     color: #1e1b4b;
@@ -43,7 +41,6 @@ body {
     cursor: pointer;
 }
 
-/* 🖱️ تأثير الماوس على الأزرار */
 .nav-btn:hover {
     background-color: rgba(251, 191, 36, 0.95);
     color: #1e1b4b;
