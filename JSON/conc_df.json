@@ -1,0 +1,15 @@
+[
+    {
+        "name":"Ballerina",
+        "appeared_year":2017,
+        "creator":"WSO2",
+        "primary_paradigm":"Concurrent",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Web Development",
+        "file_extension":".bal",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/ballerina\/ballerina-original.svg",
+        "about":"Ballerina is an open-source, cloud-native programming language developed by WSO2 in 2017. Ballerina is designed specifically for integration developers, microservices, and network API orchestration. It treats network abstractions like HTTP, gRPC, and GraphQL as first-class language primitives. Ballerina features a dual textual and visual representation, automatically generating sequence diagrams from code logic. Its structural type system and built-in concurrency model streamline enterprise API integration and cloud microservices development.",
+        "references":"https:\/\/ballerina.io\/learn\/ | https:\/\/www.udemy.com\/course\/ballerina-programming\/ | https:\/\/www.youtube.com\/watch?v=NYX4yJm2M8A"
+    }
+]

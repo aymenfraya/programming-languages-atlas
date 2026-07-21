@@ -1,0 +1,80 @@
+[
+    {
+        "name":"C",
+        "appeared_year":1972,
+        "creator":"Dennis Ritchie",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Systems Programming",
+        "file_extension":".c",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/c\/c-original.svg",
+        "about":"C is a foundational, procedural programming language developed between 1969 and 1972 by Dennis Ritchie at Bell Labs. Engineered to construct the Unix operating system, C provides low-level memory access via pointers, direct hardware mapping, and concise syntax while maintaining portability across hardware platforms. C features static typing, structured control flow, and a minimalist design philosophy, omitting high-level abstractions like classes, garbage collection, or built-in complex data structures. Despite its age, C remains the backbone of system programming, powering operating system kernels (Linux, Windows, macOS), embedded hardware systems, real-time microcontrollers, device drivers, database engines (SQLite, PostgreSQL), and language runtimes (CPython, JVM). Programmers exercise complete control over memory management through explicit functions like malloc and free, yielding exceptional execution performance and microsecond latency. However, this unchecked memory control poses severe safety risks, including buffer overflows, memory leaks, and segmentation faults. C remains the foundational language every serious computer scientist studies to master how hardware and software interact at the machine level.",
+        "references":"https:\/\/en.cppreference.com\/w\/c | https:\/\/www.edx.org\/course\/cs50s-introduction-to-computer-science | https:\/\/www.youtube.com\/watch?v=KJgsSFOSQv0"
+    },
+    {
+        "name":"Go",
+        "appeared_year":2009,
+        "creator":"Robert Griesemer",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".go",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/go\/go-original.svg",
+        "about":"Go (often referred to as Golang) is an open-source, statically typed, compiled programming language created at Google by Robert Griesemer, Rob Pike, and Ken Thompson, released in 2009. Designed to solve software engineering challenges at Google scale, Go prioritizes simplicity, rapid compilation, efficient execution, and high-concurrency concurrency management. Go features a minimalist language specification with only 25 keywords, intentionally omitting complex object-oriented features like inheritance, generics (until version 1.18), and exception handling. Instead, Go utilizes composition, interfaces, explicit error return values, and automated garbage collection. Go's standout feature is its lightweight concurrency model built on goroutines and channels, allowing millions of concurrent processes to run efficiently on multi-core servers with minimal memory footprint. Go has become the lingua franca of cloud-native infrastructure, powering tools like Docker, Kubernetes, Terraform, Hugo, and microservices backends at companies like Netflix and Uber. While critics find its syntax repetitive and lacking expressiveness, developers value Go for fast build times, single-binary deployments, and production stability.",
+        "references":"https:\/\/go.dev\/doc\/ | https:\/\/www.coursera.org\/specializations\/google-golang | https:\/\/www.youtube.com\/watch?v=YS4e4q9oBaU"
+    },
+    {
+        "name":"Fortran",
+        "appeared_year":1957,
+        "creator":"John Backus",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Data Science",
+        "file_extension":".f90",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/fortran\/fortran-original.svg",
+        "about":"Fortran (derived from 'Formula Translation') is the oldest high-level programming language still in active use, created by John Backus at IBM in 1957. Purpose-built for scientific, numerical, and engineering computations, Fortran introduced compiled programming to the world. Over seven decades, Fortran has evolved significantly (Fortran 77, 90, 2003, 2018, 2023), adding array programming, modules, object-oriented concepts, and native parallel computing via Coarray Fortran. Fortran's compiler optimization for dense matrix mathematics and linear algebra remains world-class, outperforming many modern languages. It continues to power weather forecasting models, computational fluid dynamics, nuclear physics simulations, and supercomputer benchmarks worldwide. Its primary limitation is a niche application domain outside high-performance scientific computing.",
+        "references":"https:\/\/fortran-lang.org\/learn\/ | https:\/\/www.udemy.com\/course\/fortran-for-beginners\/ | https:\/\/www.youtube.com\/watch?v=348GvE4X0gI"
+    },
+    {
+        "name":"COBOL",
+        "appeared_year":1959,
+        "creator":"Grace Hopper",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Enterprise Software",
+        "file_extension":".cbl",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/cobol\/cobol-original.svg",
+        "about":"COBOL (Common Business-Oriented Language) is a compiled, English-like programming language created in 1959 by the CODASYL committee, with Grace Hopper playing a foundational advisory role. Designed specifically for business, finance, and administrative processing systems, COBOL prioritizes high-precision decimal arithmetic, large-scale batch transaction processing, and record-oriented file operations. Its highly verbose syntax reads like formal English sentences, making code self-documenting. Decades after its creation, COBOL remains the underlying engine for global banking, mainframe operations, ATM networks, insurance processing, and government agency systems. While criticized for rigid structure and archaic syntax, COBOL's stability and unmatched decimal accuracy keep billions of lines of production code running reliably across enterprise mainframes.",
+        "references":"https:\/\/www.ibm.com\/docs\/en\/cobol-zcitos | https:\/\/www.coursera.org\/learn\/cobol-programming-basics | https:\/\/www.youtube.com\/watch?v=T3S8M80_8-4"
+    },
+    {
+        "name":"VBA",
+        "appeared_year":1993,
+        "creator":"Microsoft",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"Enterprise Software",
+        "file_extension":".vba",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/visualbasic\/visualbasic-plain.svg",
+        "about":"VBA (Visual Basic for Applications) is an event-driven programming language developed by Microsoft and integrated directly into Microsoft Office applications like Excel, Word, and Access. Released in 1993, VBA allows users to automate repetitive administrative workflows, build custom user forms, manipulate spreadsheet data cells, and interface with Windows APIs. VBA code executes inside host application macro environments, allowing financial analysts and office professionals to build complex data processing tools without standalone compilers. Despite its ubiquitous enterprise presence, VBA is an aging technology with security risks regarding macro viruses, lack of modern version control integration, and limited performance on large datasets.",
+        "references":"https:\/\/learn.microsoft.com\/en-us\/office\/vba\/api\/overview\/ | https:\/\/www.coursera.org\/learn\/excel-vba-creative-problem-solving | https:\/\/www.youtube.com\/watch?v=f93aX_mC1x8"
+    },
+    {
+        "name":"REXX",
+        "appeared_year":1979,
+        "creator":"Mike Cowlishaw",
+        "primary_paradigm":"Procedural",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".rexx",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/rexx\/rexx-original.svg",
+        "about":"REXX (Restructured Extended Executor) is a structured, high-level interpreted programming language designed by Mike Cowlishaw at IBM in 1979. Created to be easy to read and write, REXX is widely used as a scripting and macro language on IBM mainframe operating systems (z\/OS, VM, TSO). REXX excels at string handling, decimal arithmetic, and system process automation.",
+        "references":"https:\/\/www.ibm.com\/docs\/en\/zos\/2.4.0?topic=descriptions-rexx | https:\/\/www.udemy.com\/course\/rexx-programming\/ | https:\/\/www.youtube.com\/watch?v=N4M8_L7O_9Y"
+    }
+]

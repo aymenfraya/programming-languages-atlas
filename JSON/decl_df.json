@@ -1,0 +1,41 @@
+[
+    {
+        "name":"HTML",
+        "appeared_year":1993,
+        "creator":"Tim Berners-Lee",
+        "primary_paradigm":"Declarative",
+        "typing_style":"Static",
+        "execution_type":"Interpreted",
+        "primary_use":"Web Development",
+        "file_extension":".html",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/html5\/html5-original.svg",
+        "about":"HTML (HyperText Markup Language) is the standard markup language designed for creating web pages and web application user interfaces. Standardized by Tim Berners-Lee in 1993 and maintained by the WHATWG and W3C, HTML forms the foundational skeleton of all content rendered across the World Wide Web. Rather than a traditional programming language with execution logic, HTML uses structural tags and elements (such as div, p, a, table, form) to semantically organize text, images, multimedia, and interactive forms for web browsers. HTML5 introduced semantic tags (header, nav, article, section), native audio\/video controls, inline SVG vector graphics, and web storage APIs, eliminating the need for legacy plugins like Flash. HTML works in complete harmony with CSS for visual styling and JavaScript for dynamic interactivity. Learning HTML is the universal starting point for web development, offering universal browser compatibility, high accessibility standards, and SEO optimization structure.",
+        "references":"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML | https:\/\/www.freecodecamp.org\/learn\/2022\/responsive-web-design\/ | https:\/\/www.youtube.com\/watch?v=pQN-pnXPaVg"
+    },
+    {
+        "name":"CSS",
+        "appeared_year":1996,
+        "creator":"H\u00e5kon Wium Lie",
+        "primary_paradigm":"Declarative",
+        "typing_style":"Static",
+        "execution_type":"Interpreted",
+        "primary_use":"Web Development",
+        "file_extension":".css",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/css3\/css3-original.svg",
+        "about":"CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation, visual layout, and formatting of documents written in markup languages like HTML or XML. Designed by H\u00e5kon Wium Lie in 1994 and standardized by the W3C, CSS decouples webpage content structure from visual aesthetic design. CSS enables responsive web design across desktops, tablets, and smartphones through media queries, fluid grids, and flexible layouts using CSS Flexbox and CSS Grid. Modern CSS includes features like custom properties (CSS variables), animations, transitions, 3D transformations, and nesting rules. CSS preprocessors like Sass and Tailwind CSS utility frameworks streamline large-scale stylesheet architecture. Key advantages include design consistency, reduced code duplication, and faster page loading times. Taming complex cascade rules, specificity calculations, and legacy cross-browser rendering nuances remain primary challenges for frontend web developers.",
+        "references":"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/CSS | https:\/\/www.udemy.com\/course\/design-and-develop-a-killer-website-with-html5-and-css3\/ | https:\/\/www.youtube.com\/watch?v=OXGznpKZ_sA"
+    },
+    {
+        "name":"Prolog",
+        "appeared_year":1972,
+        "creator":"Alain Colmerauer",
+        "primary_paradigm":"Declarative",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"Artificial Intelligence",
+        "file_extension":".pl",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/prolog\/prolog-original.svg",
+        "about":"Prolog (short for Programming in Logic) is a logic programming language created in 1972 by Alain Colmerauer and Philippe Roussel. Unlike imperative languages that instruct a computer *how* to calculate a result, Prolog is a declarative language where programmers define relationships, facts, and logical rules. Computation is executed by asking queries against the knowledge base, which Prolog resolves using pattern matching, unification, and automatic depth-first backtracking search. Prolog excels at symbolic reasoning, natural language processing, expert decision-support systems, constraint solving, and automated theorem proving. While extremely elegant for artificial intelligence logic problems, Prolog is inefficient for traditional procedural tasks, file I\/O, or numeric matrix processing.",
+        "references":"https:\/\/www.swi-prolog.org\/pldoc\/index.html | https:\/\/www.coursera.org\/learn\/logic-programming | https:\/\/www.youtube.com\/watch?v=SykxWpFwMGs"
+    }
+]

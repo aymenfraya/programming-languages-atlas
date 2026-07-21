@@ -1,0 +1,67 @@
+[
+    {
+        "name":"PHP",
+        "appeared_year":1995,
+        "creator":"Rasmus Lerdorf",
+        "primary_paradigm":"Scripting",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"Web Development",
+        "file_extension":".php",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/php\/php-original.svg",
+        "about":"PHP (PHP: Hypertext Preprocessor) is an open-source, server-side scripting language created by Rasmus Lerdorf in 1994. Originally conceived as a simple set of Personal Home Page tools written in C, PHP evolved into a full-fledged dynamic language powering over 75% of websites with known server-side programming languages today. PHP scripts are embedded directly into HTML or executed on web servers using C runtime engines. It powers the world's most popular Content Management Systems (CMS) including WordPress, Drupal, and Joomla, as well as modern enterprise web frameworks like Laravel and Symfony. Modern PHP (PHP 8+) is vastly different from its early iterations, featuring a Just-In-Time (JIT) compiler, strong type declarations, union types, attributes, match expressions, and fiber-based concurrency. PHP offers seamless database connectivity, rapid prototyping, effortless web hosting deployment, and massive global community support. Historical criticisms focused on inconsistent function naming conventions, weak typing quirks, and security vulnerabilities in legacy codebases, but modern PHP adheres to strict object-oriented standards and high performance.",
+        "references":"https:\/\/www.php.net\/docs.php | https:\/\/www.udemy.com\/course\/php-for-complete-beginners-includes-msql-object-oriented\/ | https:\/\/www.youtube.com\/watch?v=OK_JCtrrv-c"
+    },
+    {
+        "name":"Perl",
+        "appeared_year":1987,
+        "creator":"Larry Wall",
+        "primary_paradigm":"Scripting",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".pl",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/perl\/perl-original.svg",
+        "about":"Perl is a high-level, interpreted, dynamic programming language created by Larry Wall in 1987 as a Unix scripting tool to make report processing easier. Known as 'the Swiss Army chainsaw of programming languages,' Perl excels at text processing, regular expressions, system administration, network programming, and CGI web development. Perl's motto, 'There's more than one way to do it' (TMTOWTDI), emphasizes flexibility and expressive freedom, allowing developers to write shorthand, highly compact code. Its Comprehensive Perl Archive Network (CPAN) contains vast modules for system automation. While Perl was a dominant force powering early World Wide Web backends, its permissive syntax frequently led to hard-to-read 'write-only' codebases. Although superseded by Python and JavaScript for modern web projects, Perl remains vital in legacy system administration, bioinformatics, and heavy text-parsing tasks.",
+        "references":"https:\/\/www.perl.org\/docs.html | https:\/\/www.udemy.com\/course\/perltutorial\/ | https:\/\/www.youtube.com\/watch?v=WEghIX28GZw"
+    },
+    {
+        "name":"Lua",
+        "appeared_year":1993,
+        "creator":"Roberto Ierusalimschy",
+        "primary_paradigm":"Scripting",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"Game Development",
+        "file_extension":".lua",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/lua\/lua-original.svg",
+        "about":"Lua is a lightweight, embeddable, fast scripting language created in 1993 by Roberto Ierusalimschy, Luiz Henrique de Figueiredo, and Waldemar Celes at the Pontifical Catholic University of Rio de Janeiro. Designed specifically as an extension language to be embedded inside larger C and C++ programs, Lua features a minimalist footprint, ANSI C portability, simple register-based virtual machine, and dynamic typing. Lua's primary data structuring mechanism is the associative array or 'table,' which represents arrays, sets, records, and objects. Thanks to LuaJIT (a high-performance Just-In-Time compiler), Lua executes at near-native speeds. It is the dominant scripting language in the video game industry (powering game logic in World of Warcraft, Roblox, Angry Birds), as well as embedded hardware, Nginx configurations, Redis database plugins, and Wireshark dissectors. Its main limitations include a bare-bones standard library and 1-based array indexing.",
+        "references":"https:\/\/www.lua.org\/docs.html | https:\/\/www.udemy.com\/course\/lua-scripting-masterclass\/ | https:\/\/www.youtube.com\/watch?v=iMacxZQMPXs"
+    },
+    {
+        "name":"Bash",
+        "appeared_year":1989,
+        "creator":"Brian Fox",
+        "primary_paradigm":"Scripting",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".sh",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/bash\/bash-original.svg",
+        "about":"Bash (Bourne Again SHell) is an open-source Unix shell and command-line command language written by Brian Fox for the GNU Project in 1989 as a free replacement for the Bourne shell (sh). Bash serves as the default default command interpreter and interactive shell for most Linux distributions and historical macOS environments. It combines interactive command line execution with procedural shell scripting capability, enabling software developers and system administrators to automate operating system tasks, pipeline data streams, execute process orchestration, and write CI\/CD automation scripts. Bash features command history, globbing, environment variable management, and piping via standard input\/output streams. Limitations include complex parameter expansion syntax, weak typing, and error-prone handling of filenames containing spaces.",
+        "references":"https:\/\/www.gnu.org\/software\/bash\/manual\/ | https:\/\/www.coursera.org\/learn\/hands-on-introduction-to-linux-commands-and-shell-scripting | https:\/\/www.youtube.com\/watch?v=tK9Oc6AEnR4"
+    },
+    {
+        "name":"PowerShell",
+        "appeared_year":2006,
+        "creator":"Jeffrey Snover",
+        "primary_paradigm":"Scripting",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".ps1",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/powershell\/powershell-original.svg",
+        "about":"PowerShell is a cross-platform task automation and configuration management framework developed by Microsoft, consisting of a command-line shell and scripting language introduced in 2006. Unlike traditional Unix shells that pipeline plain unformatted text, PowerShell is built on the .NET Common Language Runtime (CLR) and pipelines structured .NET objects. This object-oriented approach allows administrators to inspect properties and invoke methods directly without regex text parsing. PowerShell cmdlets provide administration over Active Directory, cloud resources (Azure, AWS), and system registries across Windows, Linux, and macOS. Its rich feature set, security controls, and deep system access make PowerShell the premier automation language for system administrators and DevOps engineers.",
+        "references":"https:\/\/learn.microsoft.com\/en-us\/powershell\/ | https:\/\/www.udemy.com\/course\/powershell-for-beginners\/ | https:\/\/www.youtube.com\/watch?v=qT_R08mscX8"
+    }
+]

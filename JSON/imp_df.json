@@ -1,0 +1,93 @@
+[
+    {
+        "name":"MATLAB",
+        "appeared_year":1984,
+        "creator":"Cleve Moler",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"Data Science",
+        "file_extension":".m",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/matlab\/matlab-original.svg",
+        "about":"MATLAB (Matrix Laboratory) is a proprietary, high-level programming language and numeric computing environment developed by MathWorks and released in 1984. Built around matrix and vector operations, MATLAB provides built-in tools for matrix manipulation, algorithm implementation, plotting of data and functions, and signal processing. It is deeply integrated with Simulink for model-based domain simulation and embedded systems engineering. MATLAB is the standard computing environment across engineering disciplines (aerospace, automotive, biomedical, electrical) and academic research institutions. Its rich toolboxes offer pre-built algorithms for control systems, deep learning, image processing, and communications. The main disadvantages are expensive commercial licensing costs, proprietary lock-in, and slower execution speed for general-purpose non-vectorized looping tasks.",
+        "references":"https:\/\/www.mathworks.com\/help\/matlab\/ | https:\/\/www.coursera.org\/learn\/matlab | https:\/\/www.youtube.com\/watch?v=T_ekAD7U-wU"
+    },
+    {
+        "name":"Zig",
+        "appeared_year":2016,
+        "creator":"Andrew Kelley",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Systems Programming",
+        "file_extension":".zig",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/zig\/zig-original.svg",
+        "about":"Zig is a modern, general-purpose, low-level systems programming language designed by Andrew Kelley and introduced in 2015. Created as a modern replacement for C, Zig emphasizes clarity, safety, and complete developer control. Zig has no hidden control flow, no operator overloading, no macro preprocessor, and no automatic hidden memory allocations. Its killer feature is compile-time code execution (`comptime`), allowing generics and metaprogramming without separate template syntax. Zig includes a built-in C compiler that cross-compiles out of the box to any target platform. It is gaining rapid adoption in system software, game engines, and audio processing.",
+        "references":"https:\/\/ziglang.org\/documentation\/master\/ | https:\/\/www.udemy.com\/course\/zig-programming-language\/ | https:\/\/www.youtube.com\/watch?v=kxT8-C1vmd4"
+    },
+    {
+        "name":"Nim",
+        "appeared_year":2008,
+        "creator":"Andreas Rumpf",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Systems Programming",
+        "file_extension":".nim",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/nim\/nim-original.svg",
+        "about":"Nim is an open-source, statically typed, imperative systems programming language created by Andreas Rumpf in 2008. Nim offers python-like clean syntax with indentation-based blocking, yet compiles down to C, C++, JavaScript, or Objective-C native code. This compilation strategy gives Nim execution speed comparable to C++ while retaining rapid developer expressiveness. Nim features a powerful macro system, compile-time AST evaluation, and flexible memory management options (including ARC\/ORC). It is used for game development, web servers, system utilities, and scientific computing.",
+        "references":"https:\/\/nim-lang.org\/documentation.html | https:\/\/www.udemy.com\/course\/nim-programming\/ | https:\/\/www.youtube.com\/watch?v=l_aB02RprLg"
+    },
+    {
+        "name":"AWK",
+        "appeared_year":1977,
+        "creator":"Alfred Aho, Peter Weinberger, Brian Kernighan",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Dynamic",
+        "execution_type":"Interpreted",
+        "primary_use":"DevOps & Automation",
+        "file_extension":".awk",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/awk\/awk-original.svg",
+        "about":"AWK is a domain-specific, interpreted programming language designed for text processing, data extraction, and report generation in Unix environments, created in 1977 by Alfred Aho, Peter Weinberger, and Brian Kernighan. AWK processes text files line-by-line, executing pattern-action rules on structured tabular data. AWK is a fundamental tool in the Unix command-line toolchain, enabling data analysts and system administrators to filter, reformat, and compute statistics on log files with concise one-liners.",
+        "references":"https:\/\/www.gnu.org\/software\/gawk\/manual\/ | https:\/\/www.udemy.com\/course\/awk-programming\/ | https:\/\/www.youtube.com\/watch?v=9YO4_aA8P4U"
+    },
+    {
+        "name":"Objective-C",
+        "appeared_year":1984,
+        "creator":"Brad Cox, Tom Love",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Mobile Development",
+        "file_extension":".m",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/objectivec\/objectivec-plain.svg",
+        "about":"Objective-C is a general-purpose, object-oriented programming language created by Brad Cox and Tom Love in 1984. By adding Smalltalk-style message passing syntax to the ANSI C programming language, Objective-C became the core programming language for NeXTSTEP and subsequently Apple's macOS and iOS operating systems for two decades before Swift's release. Objective-C uses dynamic runtime message dispatch and automatic reference counting. Millions of legacy iOS and macOS applications and frameworks continue to maintain Objective-C codebases.",
+        "references":"https:\/\/developer.apple.com\/library\/archive\/documentation\/Cocoa\/Conceptual\/ProgrammingWithObjectiveC\/ | https:\/\/www.udemy.com\/course\/objective-c-programming\/ | https:\/\/www.youtube.com\/watch?v=1xN5-7uY4_g"
+    },
+    {
+        "name":"Vyper",
+        "appeared_year":2017,
+        "creator":"Vitalik Buterin et al.",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Enterprise Software",
+        "file_extension":".vy",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/vyper\/vyper-original.svg",
+        "about":"Vyper is a contract-oriented, pythonic programming language designed for the Ethereum Virtual Machine (EVM). Developed as an alternative to Solidity, Vyper prioritizes maximal security, simplicity, and auditability by intentionally omitting complex features like inheritance, modifier functions, and inline assembly.",
+        "references":"https:\/\/docs.vyperlang.org\/ | https:\/\/www.udemy.com\/course\/vyper-programming\/ | https:\/\/www.youtube.com\/watch?v=F75U4kM5K0U"
+    },
+    {
+        "name":"Jule",
+        "appeared_year":2021,
+        "creator":"Jule Programming Language Team",
+        "primary_paradigm":"Imperative",
+        "typing_style":"Static",
+        "execution_type":"Compiled",
+        "primary_use":"Systems Programming",
+        "file_extension":".jule",
+        "logo_url":"https:\/\/raw.githubusercontent.com\/devicons\/devicon\/master\/icons\/jule\/jule-original.svg",
+        "about":"Jule is an open-source, statically typed, compiled systems programming language designed for building safe, performant software. Jule features C++-like hardware performance, memory safety primitives, and simple syntax tailored for low-level systems engineering.",
+        "references":"https:\/\/jule.dev\/docs | https:\/\/www.udemy.com\/course\/jule-programming\/ | https:\/\/www.youtube.com\/watch?v=9_M98N0_1U4"
+    }
+]
