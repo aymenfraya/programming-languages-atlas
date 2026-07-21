@@ -1,0 +1,562 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background: url('background.avif') repeat;
+}
+
+/* 1️⃣ تنسيق الـ Navbar كشريط يطفو في الأعلى مع تأثير زجاجي */
+.navbar {
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    margin: 0 auto 30px auto;
+    width: fit-content;
+    max-width: 95%;
+    
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 2️⃣ تنسيق الأزرار داخل الـ Navbar */
+.nav-btn {
+    text-decoration: none;
+    color: #1e1b4b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 🖱️ تأثير الماوس على الأزرار */
+.nav-btn:hover {
+    background-color: rgba(251, 191, 36, 0.95);
+    color: #1e1b4b;
+    border-color: rgba(254, 243, 199, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.35),
+                0 0 10px rgba(252, 211, 77, 0.5);
+}
+
+/* 3️⃣ تنسيق ديفات الأقسام الرئيسية (cards_container) */
+.cards_container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    padding: 30px 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    scroll-margin-top: 100px;
+}
+
+/* العناوين (h1) داخل كل قسم */
+.cards_container > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e1b4b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* إضافة خط فاصل ذهبي تحت كل عنوان قسم */
+.cards_container > h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #fcd34d, #f59e0b);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+}
+
+/* 4️⃣ 🌟 تنسيق بطاقة التعريف بالنمط (Paradigm Overview Card) */
+.card-paradigm {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 22px 28px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.card-paradigm:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(245, 158, 11, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
+}
+
+/* شارة التصنيف (Tag) */
+.card-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #fcd34d, #f59e0b);
+    color: #1e1b4b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+/* نص الشرح الخاص بالنمط */
+.card-body {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.65;
+    margin: 0;
+    text-align: center;
+}
+
+/* 5️⃣ تنسيق بطاقات اللغات الفرعية (The Language Cards) */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    min-height: 320px;
+    padding: 18px 15px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* 🖱️ تأثير الماوس على كروت اللغات */
+.card:hover {
+    background-color: rgba(251, 191, 36, 0.92);
+    border-color: rgba(254, 243, 199, 0.9);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(245, 158, 11, 0.4), 
+                0 0 15px rgba(252, 211, 77, 0.6);
+}
+
+.card:hover h4 {
+    color: #1e1b4b;
+    font-weight: 700;
+}
+
+.card:hover p {
+    color: #451a03;
+}
+
+.card:hover img {
+    transform: scale(1.12) translateY(-4px);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+
+/* 🖼️ صورة اللوجو داخل البطاقة */
+.img_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* النصوص داخل كرت اللغة */
+.card h4 {
+    margin: 6px 0;
+    color: #1e1b4b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card p {
+    margin: 3px 0;
+    font-size: 0.82rem;
+    color: #475569;
+    text-align: center;
+}
+/*_____________NOW THE INDEX PAGE STYLING___________________*/
+
+
+/* 🌟 تنسيق العنوان الفرعي داخل الـ Navbar */
+.navbar h3 {
+    width: 100%;
+    text-align: center;
+    color: #1e1b4b;                 /* اللون الكحلي الملكي المعتمد في باقي العناصر */
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+    letter-spacing: 1px;
+    text-transform: none;           /* 👈 إلغاء التحويل التلقائي لـ CAPITAL لتظهر الحروف كما كتبتها تماماً */
+    transition: all 0.3s ease;
+}
+
+/* 🖱️ تأثير الماوس عند التحليق فوق العنوان */
+.navbar h3:hover {
+    color: #f59e0b;                 /* التحول للون الذهبي المشرق */
+    text-shadow: 0 2px 10px rgba(245, 158, 11, 0.4); /* توهج خفيف يناسب الهوية البصرية */
+    transform: translateY(-1px);
+}
+/* 🌟 تنسيق كارت المقولة الرئيسية (Hero Quote) */
+#container .quote {
+    width: 90%;
+    max-width: 1050px;
+    margin: 25px auto 40px auto;
+    padding: 30px 40px;
+    
+    /* خلفية زجاجية معتمة بلمسة ذهبية ناعمة */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    /* الخط والنص */
+    color: #1e1b4b;                  /* الكحلي الداكن المعتمد في باقي الأزرار */
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: center;
+    text-transform: none;            /* للحفاظ على حالة الأحرف الإنجليزية الطبيعية */
+    letter-spacing: 0.3px;
+    font-style: italic;
+    
+    position: relative;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🖱️ تأثير الماوس اللطيف */
+#container .quote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.15);
+    border-color: rgba(252, 211, 77, 0.6);
+}
+
+/* 📜 إضافة علامة اقتباس ديكورية باللون الذهبي في خلفية الكارت */
+#container .quote::before {
+    content: "“";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 5rem;
+    color: rgba(245, 158, 11, 0.25); /* لون ذهبي شفاف */
+    font-family: Georgia, serif;
+    line-height: 1;
+    pointer-events: none;
+}
+/* 🌟 1️⃣ حاوية شريط البحث (Glassmorphic Search Bar) */
+.search_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto 35px auto;
+    padding: 8px 12px;
+    
+    /* خلفية زجاجية شفافة */
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* 🖱️ توهج خفيف عند تحريك الماوس أو التركيز على مربع البحث */
+.search_div:focus-within,
+.search_div:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15),
+                0 0 15px rgba(252, 211, 77, 0.2);
+}
+
+/* 📝 2️⃣ حقل الإدخال (Input) */
+.search_div input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    color: #1e1b4b; /* اللون الكحلي الملكي المقروء */
+}
+
+/* تنسيق النص التوضيحي (Placeholder) */
+.search_div input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.hero-text{
+    width:100%;
+    text-align:center;
+    font-size:1.1rem;
+    color:#475569;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.stats{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    width:180px;
+    padding:25px;
+    border-radius:18px;
+
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(10px);
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    background:#fbbf24;
+
+}
+
+.stat-card h2{
+
+    font-size:2.7rem;
+
+    color:#1e1b4b;
+
+    margin:0;
+
+}
+
+.stat-card span{
+
+    color:#475569;
+
+    font-weight:600;
+
+}
+
+/* ========================= */
+/*          TABLETS          */
+/* ========================= */
+@media (max-width: 992px) {
+
+    .cards_container{
+        width:95%;
+        padding:25px 20px;
+    }
+
+    .card{
+        width:240px;
+    }
+
+    .cards_container > h1{
+        font-size:1.9rem;
+    }
+
+    .quote{
+        font-size:1.1rem;
+        padding:25px;
+    }
+
+    .hero-text{
+        font-size:1rem;
+    }
+
+    .stat-card{
+        width:200px;
+    }
+
+}
+
+
+/* ========================= */
+/*          PHONES           */
+/* ========================= */
+@media (max-width: 768px){
+
+    .navbar{
+        width:90%;
+        padding:15px;
+        gap:8px;
+        border-radius:20px;
+    }
+
+    .nav-btn{
+        font-size:.85rem;
+        padding:8px 12px;
+    }
+
+    .navbar h3{
+        font-size:1rem;
+    }
+
+    .cards_container{
+        width:95%;
+        padding:20px 15px;
+        gap:18px;
+    }
+
+    .cards_container > h1{
+        font-size:1.6rem;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+        min-height:auto;
+    }
+
+    .card-paradigm{
+        padding:18px;
+    }
+
+    .search_div{
+        width:92%;
+    }
+
+    .search_div input{
+        font-size:.95rem;
+    }
+
+    .quote{
+        width:92%;
+        padding:20px;
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+    .quote::before{
+        font-size:3.5rem;
+    }
+
+    .hero-text{
+        font-size:.95rem;
+        padding:0 15px;
+    }
+
+    .stats{
+        gap:15px;
+    }
+
+    .stat-card{
+        width:100%;
+        max-width:280px;
+    }
+
+    .stat-card h2{
+        font-size:2.2rem;
+    }
+
+}
+
+
+/* ========================= */
+/*      SMALL PHONES         */
+/* ========================= */
+@media (max-width:480px){
+
+    body{
+        font-size:15px;
+    }
+
+    .navbar{
+        top:10px;
+        padding:12px;
+    }
+
+    .nav-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .cards_container{
+        padding:18px 12px;
+    }
+
+    .cards_container > h1{
+        font-size:1.4rem;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    img{
+        width:65px;
+        height:65px;
+    }
+
+    .card h4{
+        font-size:1rem;
+    }
+
+    .card p{
+        font-size:.8rem;
+    }
+
+    .quote{
+        font-size:.95rem;
+    }
+
+}

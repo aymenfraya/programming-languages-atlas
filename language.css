@@ -1,0 +1,438 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background: url('background.avif') repeat;
+}
+
+/* 1️⃣ تنسيق الـ Navbar كشريط يطفو في الأعلى مع تأثير زجاجي */
+.navbar {
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    margin: 0 auto 30px auto;
+    width: fit-content;
+    max-width: 95%;
+    
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 2️⃣ تنسيق الأزرار داخل الـ Navbar */
+.nav-btn {
+    text-decoration: none;
+    color: #1e1b4b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 🖱️ تأثير الماوس على الأزرار */
+.nav-btn:hover {
+    background-color: rgba(251, 191, 36, 0.95);
+    color: #1e1b4b;
+    border-color: rgba(254, 243, 199, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 158, 11, 0.35),
+                0 0 10px rgba(252, 211, 77, 0.5);
+}
+
+.hero-card{
+
+    width:90%;
+    max-width:950px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.hero-card img{
+
+    width:130px;
+    height:130px;
+    object-fit:contain;
+
+}
+
+.hero-card h1{
+
+    color:#1e1b4b;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size:2.3rem;
+
+}
+
+.hero-card p{
+
+    color:#475569;
+    font-size:1.1rem;
+
+}
+
+.info-card{
+
+    width:90%;
+    max-width:950px;
+
+    margin:auto;
+    margin-top:30px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.6);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.info-card h2,
+.about-card h2,
+.reference-card h2{
+
+    color:#1e1b4b;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+}
+
+.info-row:last-child{
+
+    border:none;
+
+}
+
+.info-row span:first-child{
+
+    font-weight:bold;
+
+    color:#1e1b4b;
+
+}
+
+.info-row span:last-child{
+
+    color:#475569;
+
+}
+
+.about-card{
+
+    width:90%;
+    max-width:950px;
+
+    margin:35px auto;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.6);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.about-card p{
+
+    line-height:1.9;
+
+    color:#334155;
+
+    text-align:justify;
+
+}
+
+.reference-card{
+
+    width:90%;
+    max-width:950px;
+
+    margin:35px auto 60px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.6);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.reference-card a{
+
+    display:block;
+
+    margin:15px 0;
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.reference-card a:hover{
+
+    color:#f59e0b;
+
+    transform:translateX(8px);
+
+}
+
+.hero-card,
+.info-card,
+.about-card,
+.reference-card{
+
+    transition:.3s;
+
+}
+
+.hero-card:hover,
+.info-card:hover,
+.about-card:hover,
+.reference-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(245,158,11,.15);
+
+}
+
+/* ========================= */
+/*          TABLETS          */
+/* ========================= */
+
+@media (max-width: 992px){
+
+    .hero-card,
+    .info-card,
+    .about-card,
+    .reference-card{
+
+        width:95%;
+        padding:30px;
+
+    }
+
+    .hero-card h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-card img{
+
+        width:110px;
+        height:110px;
+
+    }
+
+    .about-card p{
+
+        text-align:left;
+
+    }
+
+}
+
+
+/* ========================= */
+/*          PHONES           */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        width:90%;
+        padding:15px;
+        gap:8px;
+        border-radius:20px;
+
+    }
+
+    .nav-btn{
+
+        font-size:.85rem;
+        padding:8px 12px;
+
+    }
+
+    .hero-card,
+    .info-card,
+    .about-card,
+    .reference-card{
+
+        width:95%;
+        padding:22px;
+
+    }
+
+    .hero-card h1{
+
+        font-size:1.7rem;
+        text-align:center;
+
+    }
+
+    .hero-card p{
+
+        font-size:1rem;
+        text-align:center;
+
+    }
+
+    .hero-card img{
+
+        width:90px;
+        height:90px;
+
+    }
+
+    .info-row{
+
+        flex-direction:column;
+        gap:6px;
+
+    }
+
+    .about-card p{
+
+        font-size:.95rem;
+        line-height:1.8;
+        text-align:left;
+
+    }
+
+    .reference-card a{
+
+        word-break:break-word;
+
+    }
+
+}
+
+
+/* ========================= */
+/*      SMALL PHONES         */
+/* ========================= */
+
+@media (max-width:480px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .navbar{
+
+        top:10px;
+        padding:12px;
+
+    }
+
+    .nav-btn{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .hero-card h1{
+
+        font-size:1.45rem;
+
+    }
+
+    .hero-card p{
+
+        font-size:.9rem;
+
+    }
+
+    .hero-card img{
+
+        width:75px;
+        height:75px;
+
+    }
+
+    .info-card h2,
+    .about-card h2,
+    .reference-card h2{
+
+        font-size:1.3rem;
+
+    }
+
+    .info-row{
+
+        padding:12px 0;
+
+    }
+
+    .about-card p{
+
+        font-size:.9rem;
+
+    }
+
+}
