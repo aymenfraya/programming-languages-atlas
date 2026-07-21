@@ -7,7 +7,6 @@ body {
     background: url('background.avif') repeat;
 }
 
-/* 1️⃣ تنسيق الـ Navbar كشريط يطفو في الأعلى مع تأثير زجاجي */
 .navbar {
     position: sticky;
     top: 15px;
@@ -30,7 +29,6 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* 2️⃣ تنسيق الأزرار داخل الـ Navbar */
 .nav-btn {
     text-decoration: none;
     color: #1e1b4b;
@@ -43,7 +41,6 @@ body {
     cursor: pointer;
 }
 
-/* 🖱️ تأثير الماوس على الأزرار */
 .nav-btn:hover {
     background-color: rgba(251, 191, 36, 0.95);
     color: #1e1b4b;
@@ -53,7 +50,6 @@ body {
                 0 0 10px rgba(252, 211, 77, 0.5);
 }
 
-/* 3️⃣ تنسيق ديفات الأقسام الرئيسية (cards_container) */
 .cards_container {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(8px);
@@ -75,7 +71,6 @@ body {
     scroll-margin-top: 100px;
 }
 
-/* العناوين (h1) داخل كل قسم */
 .cards_container > h1 {
     width: 100%;
     text-align: center;
@@ -89,7 +84,6 @@ body {
     padding-bottom: 12px;
 }
 
-/* إضافة خط فاصل ذهبي تحت كل عنوان قسم */
 .cards_container > h1::after {
     content: '';
     position: absolute;
@@ -103,7 +97,6 @@ body {
     box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
 }
 
-/* 4️⃣ 🌟 تنسيق بطاقة التعريف بالنمط (Paradigm Overview Card) */
 .card-paradigm {
     width: 100%;
     background: rgba(255, 255, 255, 0.65);
@@ -125,7 +118,6 @@ body {
     box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
 }
 
-/* شارة التصنيف (Tag) */
 .card-tag {
     display: inline-block;
     background: linear-gradient(135deg, #fcd34d, #f59e0b);
@@ -140,7 +132,6 @@ body {
     box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 
-/* نص الشرح الخاص بالنمط */
 .card-body {
     font-size: 0.95rem;
     color: #334155;
@@ -149,7 +140,6 @@ body {
     text-align: center;
 }
 
-/* 5️⃣ تنسيق بطاقات اللغات الفرعية (The Language Cards) */
 .card {
     display: flex;
     flex-direction: column;
@@ -168,7 +158,6 @@ body {
     cursor: pointer;
 }
 
-/* 🖱️ تأثير الماوس على كروت اللغات */
 .card:hover {
     background-color: rgba(251, 191, 36, 0.92);
     border-color: rgba(254, 243, 199, 0.9);
@@ -191,7 +180,6 @@ body {
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
 }
 
-/* 🖼️ صورة اللوجو داخل البطاقة */
 .img_div {
     width: 100%;
     display: flex;
@@ -206,7 +194,6 @@ img {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* النصوص داخل كرت اللغة */
 .card h4 {
     margin: 6px 0;
     color: #1e1b4b;
@@ -224,33 +211,30 @@ img {
 /*_____________NOW THE INDEX PAGE STYLING___________________*/
 
 
-/* 🌟 تنسيق العنوان الفرعي داخل الـ Navbar */
 .navbar h3 {
     width: 100%;
     text-align: center;
-    color: #1e1b4b;                 /* اللون الكحلي الملكي المعتمد في باقي العناصر */
+    color: #1e1b4b;                
     font-size: 1.1rem;
     font-weight: 700;
     margin: 5px 0 10px 0;
     letter-spacing: 1px;
-    text-transform: none;           /* 👈 إلغاء التحويل التلقائي لـ CAPITAL لتظهر الحروف كما كتبتها تماماً */
+    text-transform: none;           
     transition: all 0.3s ease;
 }
 
-/* 🖱️ تأثير الماوس عند التحليق فوق العنوان */
 .navbar h3:hover {
-    color: #f59e0b;                 /* التحول للون الذهبي المشرق */
-    text-shadow: 0 2px 10px rgba(245, 158, 11, 0.4); /* توهج خفيف يناسب الهوية البصرية */
+    color: #f59e0b;                 
+    text-shadow: 0 2px 10px rgba(245, 158, 11, 0.4); 
     transform: translateY(-1px);
 }
-/* 🌟 تنسيق كارت المقولة الرئيسية (Hero Quote) */
+
 #container .quote {
     width: 90%;
     max-width: 1050px;
     margin: 25px auto 40px auto;
     padding: 30px 40px;
     
-    /* خلفية زجاجية معتمة بلمسة ذهبية ناعمة */
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -258,13 +242,12 @@ img {
     border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 
-    /* الخط والنص */
-    color: #1e1b4b;                  /* الكحلي الداكن المعتمد في باقي الأزرار */
+    color: #1e1b4b;                  
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.8;
     text-align: center;
-    text-transform: none;            /* للحفاظ على حالة الأحرف الإنجليزية الطبيعية */
+    text-transform: none;            
     letter-spacing: 0.3px;
     font-style: italic;
     
@@ -273,26 +256,23 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🖱️ تأثير الماوس اللطيف */
 #container .quote:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(245, 158, 11, 0.15);
     border-color: rgba(252, 211, 77, 0.6);
 }
 
-/* 📜 إضافة علامة اقتباس ديكورية باللون الذهبي في خلفية الكارت */
 #container .quote::before {
     content: "“";
     position: absolute;
     top: -10px;
     left: 20px;
     font-size: 5rem;
-    color: rgba(245, 158, 11, 0.25); /* لون ذهبي شفاف */
+    color: rgba(245, 158, 11, 0.25); 
     font-family: Georgia, serif;
     line-height: 1;
     pointer-events: none;
 }
-/* 🌟 1️⃣ حاوية شريط البحث (Glassmorphic Search Bar) */
 .search_div {
     display: flex;
     align-items: center;
@@ -303,7 +283,6 @@ img {
     margin: 20px auto 35px auto;
     padding: 8px 12px;
     
-    /* خلفية زجاجية شفافة */
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -313,7 +292,6 @@ img {
     transition: all 0.3s ease;
 }
 
-/* 🖱️ توهج خفيف عند تحريك الماوس أو التركيز على مربع البحث */
 .search_div:focus-within,
 .search_div:hover {
     background: rgba(255, 255, 255, 0.85);
@@ -322,7 +300,6 @@ img {
                 0 0 15px rgba(252, 211, 77, 0.2);
 }
 
-/* 📝 2️⃣ حقل الإدخال (Input) */
 .search_div input {
     flex: 1;
     border: none;
@@ -331,10 +308,9 @@ img {
     padding: 10px 18px;
     font-size: 1rem;
     font-family: 'Fredoka', sans-serif;
-    color: #1e1b4b; /* اللون الكحلي الملكي المقروء */
+    color: #1e1b4b;
 }
 
-/* تنسيق النص التوضيحي (Placeholder) */
 .search_div input::placeholder {
     color: #94a3b8;
     font-weight: 400;
@@ -434,129 +410,100 @@ img {
 /*          PHONES           */
 /* ========================= */
 @media (max-width: 768px){
-
     .navbar{
         width:90%;
-        padding:15px;
-        gap:8px;
-        border-radius:20px;
-    }
-
-    .nav-btn{
-        font-size:.85rem;
         padding:8px 12px;
+        gap:6px;
+        border-radius:16px;
     }
-
+    .nav-btn{
+        font-size:.8rem;
+        padding:6px 10px;
+    }
     .navbar h3{
-        font-size:1rem;
+        font-size:.9rem;
     }
-
     .cards_container{
         width:95%;
         padding:20px 15px;
         gap:18px;
     }
-
     .cards_container > h1{
         font-size:1.6rem;
     }
-
     .card{
         width:100%;
         max-width:320px;
         min-height:auto;
     }
-
     .card-paradigm{
         padding:18px;
     }
-
     .search_div{
         width:92%;
     }
-
     .search_div input{
         font-size:.95rem;
     }
-
     .quote{
         width:92%;
         padding:20px;
         font-size:1rem;
         line-height:1.6;
     }
-
     .quote::before{
         font-size:3.5rem;
     }
-
     .hero-text{
         font-size:.95rem;
         padding:0 15px;
     }
-
     .stats{
         gap:15px;
     }
-
     .stat-card{
         width:100%;
         max-width:280px;
     }
-
     .stat-card h2{
         font-size:2.2rem;
     }
-
 }
-
-
 /* ========================= */
 /*      SMALL PHONES         */
 /* ========================= */
 @media (max-width:480px){
-
     body{
         font-size:15px;
     }
-
     .navbar{
-        top:10px;
-        padding:12px;
+        top:6px;
+        padding:6px 10px;
     }
-
     .nav-btn{
-        width:100%;
+        width:auto;
         text-align:center;
     }
-
     .cards_container{
         padding:18px 12px;
     }
-
     .cards_container > h1{
         font-size:1.4rem;
     }
-
     .card{
         padding:15px;
     }
-
     img{
         width:65px;
         height:65px;
     }
-
     .card h4{
         font-size:1rem;
     }
-
     .card p{
         font-size:.8rem;
     }
-
     .quote{
         font-size:.95rem;
     }
-
 }
